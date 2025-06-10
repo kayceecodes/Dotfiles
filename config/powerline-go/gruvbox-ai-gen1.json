@@ -1,0 +1,90 @@
+{ 
+  "Reset": 0,
+
+  "DefaultBg": 187,
+  "DefaultFg": 234,
+  
+  "UsernameBg": 235,
+  "UsernameFg": 203,
+  
+  "HostnameBg": 235,
+  "HostnameFg": 173,
+  
+  "HomeSpecialDisplay": true,
+  
+  "HomeBg": 235,
+  "HomeFg": 38,
+  
+  "PathBg": 95,
+  "PathFg": 251,
+
+  "CwdBg": 95,
+  "CwdFg": 250,
+  
+  "SeparatorBg": 235,
+  "SeparatorFg": 95,
+  
+  "ReadonlyBg": 235,
+  "ReadonlyFg": 203,
+  
+  "SshBg": 235,
+  "SshFg": 173,
+  
+  "DockerMachineBg": 235,
+  "DockerMachineFg": 108,
+  
+  "DotEnvBg": 235,
+  "DotEnvFg": 221,
+  
+  "GitCleanBg": 95,
+  "GitCleanFg": 196,
+  
+  "GitDirtyBg": 235,
+  "GitDirtyFg": 173,
+  
+  "GitStagedBg": 235,
+  "GitStagedFg": 108,
+  
+  "GitAheadBg": 235,
+  "GitAheadFg": 108,
+  
+  "GitBehindBg": 235,
+  "GitBehindFg": 173,
+  
+  "GitConflictedBg": 235,
+  "GitConflictedFg": 203,
+  
+  "VirtualEnvBg": 235,
+  "VirtualEnvFg": 108,
+  
+  "JobsBg": 235,
+  "JobsFg": 108,
+  
+  "LoadBg": 235, 
+  "LoadFg": 203,
+  
+  "CmdPassedBg": 235,
+  "CmdPassedFg": 108,
+  
+  "CmdFailedBg": 235,
+  "CmdFailedFg": 203,
+  
+  "TimeBg": 235,
+  "TimeFg": 152,
+  
+  "ShellVarBg": 235,
+  "ShellVarFg": 230,
+  
+  "NodeBg": 235, 
+  "NodeFg": 221,
+  
+  "RubyBg": 235,
+  "RubyFg": 203,
+  
+  "PerlBg": 235,
+  "PerlFg": 173,
+  
+  "PythonBg": 235,
+  "PythonFg": 108
+}
+
