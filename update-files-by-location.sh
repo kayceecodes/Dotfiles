@@ -3,4 +3,4 @@
  cp ~/.tmux/tmux-powerline/themes/default.sh ~/dotfiles/tmux/tmux-powerline/themes/
  cp /org/cinnamon/desktop/keybindings/ ~/dotfiles/org/cinnamon/desktop/keybindings/
  cp ~/workspace-move-docker-desktop.sh ~/dotfiles/
-
+ cp ~/scripts/workspace-move-docker-desktop.sh ~/dotfiles/scripts/
