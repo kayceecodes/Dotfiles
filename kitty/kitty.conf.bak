@@ -1,14 +1,23 @@
 # BEGIN_KITTY_THEME
-# Gruvbox Dark Soft
+# Atelier Estuary Dark
 include current-theme.conf
 # END_KITTY_THEME
 
-background_image /home/kaycee/Pictures/Wallpaper/SpaceAstronaut/LittleAstronaut.png
+#background_image /home/kaycee/Pictures/Wallpaper/SpaceAstronaut/LittleAstronaut.png
+background_image /home/kaycee/Pictures/Wallpaper/SpaceAstronaut/StarsGruvbox.png
 
-background_image_layout clamped
+#background_image_layout clamped
 
-background_tint 0.85
+background_tint 0.9
 
-background_opacity 0.35
+background_opacity 0.9
+ 
+font_family Cascadia Code
 
+font_size 14.5 
 
+hide_window_decorations yes 
+
+window_padding_width 5
+
+enable_audio_bell no
