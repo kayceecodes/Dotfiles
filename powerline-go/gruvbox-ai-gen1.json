@@ -12,17 +12,17 @@
   
   "HomeSpecialDisplay": true,
   
-  "HomeBg": 235,
-  "HomeFg": 38,
+  "HomeBg": 237,
+  "HomeFg": 117,
   
-  "PathBg": 95,
-  "PathFg": 251,
+  "PathBg": 144,
+  "PathFg": 233,
 
   "CwdBg": 90,
-  "CwdFg": 250,
+  "CwdFg": 233,
   
   "SeparatorBg": 235,
-  "SeparatorFg": 95,
+  "SeparatorFg": 144,
   
   "ReadonlyBg": 235,
   "ReadonlyFg": 203,
