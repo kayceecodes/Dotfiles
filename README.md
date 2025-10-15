@@ -1,4 +1,4 @@
-#Hidden
+# List of Files
 1.(access through dconf gui editor only) - mykeybindings.conf
 2. ~/scripts/
 3. ~/.bashrc
@@ -8,7 +8,7 @@
 7. ~/.config/powerline-go/gruvbox-ai-gen1.json
 8. ~/.themes/Gruvbox-Dark-Custom/ 
 
-#Locations
+#Directions
 - Example title - Edit made file if there was one
 /path/to/file/or/directory
 Notes:
