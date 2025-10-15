@@ -1,4 +1,10 @@
-
+# window manager control - move to workspaces
+alias codews='code . & sleep 1 && wmctrl -r "code" -t 2'
+# lazy docker
+alias lydr="lazydocker"
+alias lzydr="lazydocker"
+# restart plank - rsplank
+alias rsplank='killall plank > /dev/null 2>&1 && nohup plank > /dev/null 2>&1 &'
 # start neovim in docker (start container by id# & execute interactive container by name)
 alias dsuc='docker start 247 && docker exec -it my_ubuntu_container "/bin/bash"'
 alias deuc='docker exec -it my_ubuntu_container "/bin/bash"'
@@ -32,13 +38,14 @@ alias kdpvc='kubectl delete pvc'
 alias kd='kubectl delete'
 alias kaf='kubectl apply -f'
 alias krrd='kubectl rollout restart deployment'
-
-alias uu='sudo apt update && sudo apt upgrade -y'
+# Update, Upgrade, List Upgradable
+alias uu='sudo apt update && sudo apt upgrade -y && flatpak update'
 alias lu='sudo apt list --upgradable'
-alias ud='sudo apt update'
-alias update='sudo apt update'
-alias upgrade='sudo apt upgrade'
+alias ud='sudo apt update && flatpak update'
+alias upd='sudo apt update && flatpak update'
 alias ug='sudo apt upgrade'
+alias upg='sudo apt upgrade'
+
 alias clr='clear'
 alias ar='sudo apt autoremove'
 alias dropboxws='cd /mnt/c/Users/justk/Dropbox'
@@ -182,7 +189,16 @@ function _update_ps1() {
 	-git-disable-stats ahead,behind,staged,notStaged,untracked,conflicted,stashed
     )"
 }
-  
+ 
+
+
+# Check if this is an interactive shell, and not already in tmux.
+#=if [ "$PS1" ] && [ -z "$TMUX" ]; then
+  # Attach to the most recent session, or create a new one.
+#=  tmux attach-session -t "$(tmux ls -F '#{session_id}' | head -n 1)" || tmux new-session
+#=fi
+
+
 
 # (This disables git, it go in the PS1 line) -git-disable-stats ahead,behind,staged,notStaged,untracked,conflicted,stashed \
 
@@ -213,6 +229,9 @@ PROMPT_COMMAND="_update_ps1"
 #done
 #echo
 #source ~/trueline/trueline.sh
+
+#zioxide
+eval "$(zoxide init bash)"
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
