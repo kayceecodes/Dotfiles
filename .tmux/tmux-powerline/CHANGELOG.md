@@ -6,16 +6,30 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Added
+- [`weather.sh`](segments/weather.sh): auto detection of location by GeoIP. [#464](https://github.com/erikw/tmux-powerline/pull/464)
+- `.editorconfig` for consistent coding style. [#477](https://github.com/erikw/tmux-powerline/pull/477)
+- [`dropbox_status.sh`](segments/dropbox_status.sh) a new segment showing Dropbox operation statuses. [#478](https://github.com/erikw/tmux-powerline/pull/478)
+- Proper error logging in segments with function `tp_err_seg()`. [#486](https://github.com/erikw/tmux-powerline/pull/486) [#485](https://github.com/erikw/tmux-powerline/pull/485)
+- Adapter segments for [tmux-continuum](https://github.com/tmux-plugins/tmux-continuum/): [`tmux_continuum_save.sh`](segments/tmux_continuum_save.sh) and [`tmux_continuum_status.sh`](segments/tmux_continuum_status.sh) [#493](https://github.com/erikw/tmux-powerline/pull/493)
+### Changed
+- **Deprecation Warning:** functions `patched_font_in_use()`, `air_color()` and `format()` have been replaced by `tp_patched_font_in_use()`, `tp_air_color()` and `tp_format()` respectively and will be removed in future releases.
+Please update your custom themes and segments now. [#489](https://github.com/erikw/tmux-powerline/pull/489)
+### Removed
+- `now_playing.sh`: removed Spotify though wine. Not likely this is used anymore. If someone still uses, shout at me and I'll add it back :-). [#473](https://github.com/erikw/tmux-powerline/pull/473)
+- `weather.sh`: Removed GNU Grep dependency [#468](https://github.com/erikw/tmux-powerline/pull/468)
+- `cpu.sh`:  Removed GNU Grep dependency [#472](https://github.com/erikw/tmux-powerline/pull/472)
+
 
 ## [3.1.0] - 2025-03-03
 ### Added
 - Dual status bar support [#379](https://github.com/erikw/tmux-powerline/issues/379)
-- New segment date_week [#375](https://github.com/erikw/tmux-powerline/issues/375)
-- New segment kubernetes_context [#377](https://github.com/erikw/tmux-powerline/issues/377)
-- New segment vcs_rootpath [#373](https://github.com/erikw/tmux-powerline/issues/374)
-- New segment vpn [#383](https://github.com/erikw/tmux-powerline/issues/383)
+- New segment `date_week.sh` [#375](https://github.com/erikw/tmux-powerline/issues/375)
+- New segment `kubernetes_context.sh` [#377](https://github.com/erikw/tmux-powerline/issues/377)
+- New segment `vcs_rootpath.sh` [#373](https://github.com/erikw/tmux-powerline/issues/374)
+- New segment `vpn.sh` [#383](https://github.com/erikw/tmux-powerline/issues/383)
 - Re-enable Linter [#414](https://github.com/erikw/tmux-powerline/pull/414)
-- GitHub Codespaces devcontainer config setting up all dependencies and installs tmux-powerline in the container. See [devcontainer.json](.devcontainer/devcontainer.json) and [devcontainer_postCreateCommand.sh](scripts/devcontainer_postCreateCommand.sh). 
+- GitHub Codespaces devcontainer config setting up all dependencies and installs tmux-powerline in the container. See [devcontainer.json](.devcontainer/devcontainer.json) and [devcontainer_postCreateCommand.sh](scripts/devcontainer_postCreateCommand.sh).
 - Add `semver` to devcontainer to help bumping versions.
 
 ### Changed
